@@ -10,6 +10,10 @@ dotenv.config({ path: "config/config.env" });
 
 app.use(errorHandlerModule);
 
+app.get("/test", (req, res) => {
+  res.json({ message: "API is working" });
+});
+
 app.use("*", (req, res, next) => {
   const error = new CustomError("Invalid Route in this server.", 404);
   return next(error);
