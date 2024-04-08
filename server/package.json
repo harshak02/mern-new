@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "index.js",
+  "devDependencies": {},
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "harsha",
+  "license": "ISC"
+}
